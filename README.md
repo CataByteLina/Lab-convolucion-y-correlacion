@@ -1,6 +1,6 @@
 # Lab-convolucion-y-correlacion
 ## Descripcion
-En el presente laboratorio se implementa código para realizar una convolucion entre un sistema y una señal, también se analiza la correlación entre dos señales y se aplica la transformada de Fourier para pasar la señal del dominio del tiempo al dominio de la frecuencia.
+En el presente laboratorio se implementa código para realizar una convolución entre un sistema y una señal, también se analiza la correlación entre dos señales y se aplica la transformada de Fourier para pasar la señal del dominio del tiempo al dominio de la frecuencia.
 > [!TIP]
 >Librerias necesarias:
 >```
@@ -11,8 +11,8 @@ En el presente laboratorio se implementa código para realizar una convolucion e
 >rom scipy.signal import welch
 > ```
 ## Calcular la convolución
-*describir que es la convolucion
-En el ejemplo se almacenó la informacion del sistema en un vector y la de la señal en otro, posteriormente se usa la función de la libreria numpy "convolve" para obtener el resultado de la convolución
+La convolución de señales es una operación matemática que combina dos señales para obtener una nueva señal. El teorema de convolución establece que, bajo determinadas circunstancias, la transformada de Fourier de una convolución es el producto punto a punto de las transformadas. 
+En el ejemplo se almacenó la información del sistema en un vector y la de la señal en otro, posteriormente se usa la función de la libreria numpy "convolve" para obtener el resultado de la convolución.
 ```
 vectorh = [5,6,0,0,8,0,7]
 vectorx= [1,1,1,8,1,6,7,8,4,2]
@@ -22,7 +22,7 @@ print("LAURA y[n]")
 print(vectory)
 
 ```
-Para graficar la convolucion se rellena la matriz ejex con el numero de datos de la convolución, despues usando las funciones vlines y scatter se hacen las barras que tienen el valor y dado por la convolucion
+Para graficar la convolución se rellena la matriz ejex con el numero de datos de la convolución, despues usando las funciones vlines y scatter se hacen las barras que tienen el valor y dado por la convolución.
 ```
 ejex=[]
 for i in range(len(vectory)):
